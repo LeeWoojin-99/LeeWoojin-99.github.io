@@ -2,46 +2,80 @@
 <html lang="kr">
 <head>
 	<meta charset="UTF-8">
+	<link rel="icon" href="./images/favicon2.ico">
 </head>
 <style type="text/css">
 	body{
 		margin : 0;
 		padding : 0;
 		background-color: #ffbb00;
+		font-family: "나눔스퀘어라운드";
 	}
-	.header{
+	#header{
 		height: 100px;
 		text-align : center;
 		font-size: 60px;
-		font-family: "G마켓 산스 TTF";
 		font-weight: lighter;
 		background-color: rgb(0,0,0,0.1);
 	}
-	.class1{
+	#container{
 		margin: 0 auto;
 		width : 1200px;
-		height : 250px;
+		height : 2000px;
 		vertical-align: middle;
 		text-align : center;
 		font-family: "Recoleta DEMO";
 		font-size : 70px;
 		line-height: 100px;
-		background-color: rgb(0,0,0,0.1);
+		border : 1px solid black;
 	}
-	.class1 .img{
+	#container .img{
 		display: block;
 		width: 300px;
 		height: 300px;
 		margin: 0 auto;
-		border-radius: 100px;
+	}
+	#footer{
+		height: 100px;
+		text-align : center;
+		font-weight: bold;
+		background-color: rgb(255,255,255,0.2);
+	}
+	#footer .footer_inner{
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.footer_email{
+		width: 215px;
+		height: 100px;
+		font-size : 22px;
+		color: #000000;
+		margin: 0 auto;
+	}
+	.footer_email span{
+		display: table-cell;
+		height: 100px;
+		vertical-align: middle;
+		text-align: center;
 	}
 </style>
 <body>
-	<div class="header">헤더공간</div>
-	<div class="class1">
+	<div id="header">HEADER 공간</div>
+	<div id="container">
 		Test<br>
-		<img class="img" src="./images/ink2.jpg" alt="">
-		Programmer
+		<img class="img" src="./images/ink2.png" alt="">
+		Programmer<br>
+		Lee Woojin
+	</div>
+	<div id="footer">
+		<div class="footer_inner">
+			<div class="footer_email">
+				<span>
+					이메일<br>
+					lwj1316@naver.com
+				</span>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
